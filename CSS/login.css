@@ -1,0 +1,262 @@
+/* ----------------- Best-Practices-Starts ------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+
+html{
+    width: 100%;
+    height: 100%;
+
+}
+
+body{
+
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #BCBCBC;
+    outline: none;
+    
+
+    margin-top: 40px;
+    
+
+    width: 320px;
+    height: 27px;
+    
+
+}
+
+input::placeholder{
+    font-size: 18px;
+    color: #BCBCBC;
+    font-weight: 400px;
+}
+
+button{
+    cursor:pointer;
+}
+
+
+/*  Best-Practices-Ends ------------------ */
+
+
+
+
+
+
+/* ----------------- Container-Styling-Starts ------------------ */
+
+.container{
+    
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row; 
+    column-gap: 90px;  
+}
+
+/* Container-Styling-Ends ------------------ */
+
+
+
+
+
+/* ----------------- Logo-image-Styling-Starts ------------------ */
+.logo-image{
+   
+    width: 541px;
+    /* height: 100%; */
+    position: relative;
+
+}
+
+.logo-image img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    
+  
+}
+
+/*   Logo-image-Styling-Ends ------------------ */
+
+
+
+
+/* ----------------- Form-Styling-Starts ------------------ */
+
+.form{
+    /* border: 2px solid darkgreen; */
+    width: 800px;
+    height: 100%;
+
+}
+
+/*  Form-Styling-Ends ------------------ */
+
+
+
+/* ----------------- logo-with-title-Styling-Starts ------------------ */
+
+.logo-with-title{
+    /* border: 2px solid darkblue; */
+    width: 100%;
+    height: 98px; 
+    margin-top: 73px;
+
+    
+
+    display: flex;
+    column-gap: 245px;
+}
+
+.logo{
+    width: 98px;
+    height: 100%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    width: fit-content;
+    height: 100%;
+   
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+
+}
+
+.title span{
+    cursor:default;
+    color: rgba(38, 30, 59, 1);
+}
+
+.title button{
+    border: none;
+    background-color: white;
+    outline: none;
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+    color: rgba(205, 205, 205, 1);
+
+}
+
+/* logo-with-title-Styling-Ends ------------------ */
+
+
+/* ----------------- form-table-Styling-Starts ------------------ */
+
+.form-table{
+    margin-top: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid rgba(224, 224, 224, 1);
+    border-radius: 30px;
+    background-color:rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    width: 514px;
+    height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.welcome-text{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color:rgba(38, 30, 59, 1);
+
+}
+
+.safety-sol-text{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgba(188, 188, 188, 1);
+
+}
+
+#Hospital-Name{
+    border-bottom:2px solid #000000;
+
+}
+
+#Hospital-Name::placeholder{
+    font-weight: 500;
+    color: #000000;
+    line-height: 27px;
+
+}
+
+
+/* form-table-Styling-Starts ------------------ */
+
+
+
+.login-button button{
+    margin-top: 40px;
+    margin-left: 345px;
+    border: 2px solid black;
+    background-color:  rgba(38, 30, 59, 1);
+    border-radius: 15px;
+    color: white;
+    width: 160px;
+    height: 50px;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+
+
+}
+
+
+.terms-and-condition li{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    color: rgba(188, 188, 188, 1); 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+
+
+
+
+
+
+
+
+

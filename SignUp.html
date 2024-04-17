@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Sicu-aura</title>
+    <link rel="stylesheet" href="./CSS/SignUp.css"/>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo-image">
+            <img src="./image/logo-image.png" alt="logo-image"/>
+        </div>
+
+        <div class="form">
+
+            <div class="logo-with-title">
+
+                <div class="logo">
+                    <img src="./image/logo.png" alt="logo"/>
+                </div>
+                
+
+                <div class="title">
+                    <span>Sign Up</span>
+
+                    <button id="login-button">/ Login</button>
+
+                </div>
+
+            </div>
+            <form action="./backend/SignUp.php" method="post"  enctype="multipart/form-data" id="signup-form">
+
+                <div class="form-table">
+                    <table>
+                        <tr>
+                            <td><input  type="text" placeholder="Hospital Name" name="hospitalName" id="Hospital-Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Address" name="address" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="City" name="city" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="State" name="state" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" placeholder="Pincode" name="pinCode" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Hospital Registration Date" name="h_RegistrationDate"
+                            onfocus="(this.type='date')"  required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" placeholder="Number Of Ambulance available" name="n_ambulance" required></td>
+                        </tr>
+                    </table>
+    
+                    <table >
+                        <tr>
+                            <td><input type="email" placeholder="Email ID" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="tel" placeholder="Phone Number" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Hospital Registration Number" name="h_RegistrationNumber" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Emergency-Ward Number" name="e_WardNumber" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="file" placeholder="Registration certificate Upload" name="file" id="input-file" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Create Password" name="password"  id="password" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Confirm Password"  id="confirm_password"  onkeyup="validate_password()" required></td>
+                        </tr>
+                        <tr>
+                            <td><input id="code" type="text" name="special_access_code"></td>
+                        </tr>
+                    </table>
+
+                </div>
+    
+                <div class="Sign-Up-button">
+                    <button id="create"   type="submit"  onclick="checkFormValidity()">Sign Up</button>
+                    <span id="wrong_pass_alert"></span>
+                </div>
+
+            </form>
+          
+
+        
+            <div class="terms-and-condition">
+               <ul>
+                <li>Terms and Condition privacy policy</li>
+               </ul>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div id="overlay">
+        <div class="prototype">
+            <div class="prototype-image">
+                <img src="./image/Checkmark.png" alt="Checkmark"/>
+            </div>
+            <div>
+                <span class="please-note">Please note the special access code:</span>
+            <span id="special_access_code"></span>
+            </div>
+            <p>Your Registration has been Successful</p>
+        </div>
+    </div>
+
+    <script src="./javascript/SignUp.js"  ></script>
+</body>
+</html>

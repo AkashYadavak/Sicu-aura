@@ -1,0 +1,224 @@
+/* ----------------- Best-Practices-Starts ------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+
+html{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+
+body{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    cursor:pointer;
+}
+
+
+/*  Best-Practices-Ends ------------------ */
+
+
+
+
+
+
+/* ----------------- Container-Styling-Starts ------------------ */
+
+.container{
+    /* border: 2px solid blue; */
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row; 
+    column-gap: 90px;  
+
+    position: relative;
+}
+
+/* Container-Styling-Ends ------------------ */
+
+
+
+
+
+/* ----------------- Logo-image-Styling-Starts ------------------ */
+.left-part{
+    /* border: 2px solid goldenrod; */
+    width: 541px;
+    /* height: 100%; */
+    position: relative;
+
+}
+
+.left-part img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    
+  
+}
+
+/*   Logo-image-Styling-Ends ------------------ */
+
+
+
+
+/* ----------------- Form-Styling-Starts ------------------ */
+
+.right-part{
+    /* border: 2px solid darkgreen; */
+    width: 800px;
+    height: 100%;
+
+}
+
+/*  Form-Styling-Ends ------------------ */
+
+
+
+/* ----------------- logo-with-title-Styling-Starts ------------------ */
+
+.logo-with-title{
+    /* border: 2px solid darkblue; */
+    width: 100%;
+    height: 98px; 
+    margin-top: 73px;
+
+    
+
+    display: flex;
+    column-gap: 245px;
+}
+
+.logo{
+    width: 98px;
+    height: 100%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    width: fit-content;
+    height: 100%;
+   
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+
+}
+
+.title span{
+    cursor:default;
+    color: rgba(38, 30, 59, 1);
+}
+
+.title button{
+    border: none;
+    background-color: white;
+    outline: none;
+   
+  
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+    color: rgba(205, 205, 205, 1);
+
+}
+
+
+
+/* logo-with-title-Styling-Ends ------------------ */
+
+
+.camera-area{
+    margin-top: 130px;
+    margin-left: 98px;
+    /* border: 2px solid green; */
+    width: 514px;
+    
+}
+
+.camera-area p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(80, 80, 80, 1);
+
+    margin-bottom: 30px;
+}
+
+#camera-placeholder{
+    width: 100%;
+    height: 450px;
+    border: 1px solid rgba(144, 144, 144, 1);
+    border-radius: 10px;
+    background-color: rgba(192, 192, 192, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+#video{
+    display: none;
+    border: 2px solid blue;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+#capture-btn{
+    margin-top: 70px;
+    margin-left: 165px;
+    border: 1px solid rgba(38, 30, 59, 1);
+    border-radius: 15px;
+    width:160px;
+    height: 50px;
+    color: white;
+    background-color: rgba(38, 30, 59, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
+.terms-and-condition li{
+    margin-top: 50px;
+    margin-left: 260px;
+    margin-bottom: 20px;
+    color: rgba(188, 188, 188, 1); 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+
+
+}
